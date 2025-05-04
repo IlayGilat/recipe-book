@@ -1,11 +1,9 @@
 // Sample test to verify Jest setup
-describe('Sample Test', () => {
-  it('should pass a basic test', () => {
-    expect(1 + 1).toBe(2);
-  });
+import { DB } from "../data/db";
+describe('recipies', () => {
 
-  it('should pass an async test', async () => {
-    const data = await Promise.resolve('test');
-    expect(data).toBe('test');
-  });
+  it('should get the recipies', () => {
+      expect(DB.recipes.length).toBe(2)
+  })
+
 }); 
