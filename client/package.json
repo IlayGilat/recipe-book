@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "jest",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "cypress:open": "cypress open"
@@ -26,29 +26,32 @@
     "bootstrap": "3.3.7",
     "rxjs": "^6.6.3",
     "rxjs-compat": "^6.0.0",
-    "tslib": "^2.0.3",
-    "zone.js": "^0.10.3"
+    "tslib": "^2.0.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1100.4",
     "@angular/cli": "^10.0.4",
     "@angular/compiler-cli": "^10.0.5",
+    "@babel/preset-typescript": "^7.27.1",
     "@ngrx/store-devtools": "10.0.0",
-    "@types/jasmine": "~3.6.0",
-    "@types/jasminewd2": "~2.0.3",
+    "@types/jest": "^29.5.14",
     "@types/node": "^12.19.9",
     "codelyzer": "^6.0.1",
     "cypress": "^14.3.2",
-    "jasmine-core": "~3.6.0",
-    "jasmine-spec-reporter": "~5.0.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "esbuild": "^0.25.3",
+    "jest": "^26.6.0",
+    "jest-preset-angular": "^8.4.0",
     "karma": "~5.1.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.4",
     "protractor": "~7.0.0",
+    "ts-jest": "^29.3.2",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.2"
+    "typescript": "~4.0.2",
+    "zone.js": "^0.11.4"
   }
 }
